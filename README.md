@@ -50,6 +50,10 @@ complex output structures, called **Concealed Dense Prediction**.
 - **Quick View.** 
 
   - The following demonstrates some of the capabilities of our concealed visual perception-specific multimodal AI assistant, CvpAgent. Simply accepting pictures and user commands, the model sets multiple concealed vision tasks into one via interactive dialog.
+  
+    <div align=center>
+    <img src="assets/demo.gif" width=600/>
+    </div>
 
 
 
@@ -78,7 +82,7 @@ conda activate cvpagent
 pip install -r requirements.txt
 pip install qwen-vl-utils
 pip install git+https://github.com/huggingface/transformers.git@9d2056f12b66e64978f78a2dcb023f65b2be2108 accelerate
-pip install assets/flash_attn-2.5.9.post1+cu122torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install flash_attn-2.5.9.post1+cu122torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 # SAM2
 cd special_list
 pip install -e ".[demo]"
