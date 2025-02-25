@@ -28,13 +28,13 @@ complex output structures, called **Concealed Dense Prediction**.
   - Detailed survey for the CDP area, including analysis of 14 concealment mechanism.
 
     <div align=center>
-    <img src="assets/concealment_mechanism.pdf" width=500/><img src="assets/concealment_mechanism_taxonomy.pdf" width=200/>
+    <img src="assets/concealment_mechanism.jpg" width=500/><img src="assets/concealment_mechanism_taxonomy.jpg" width=200/>
     </div>
 
   - A **taxonomy of CDP** deep learning techniques in the vein of concealment counteracting.
 
     <div align=center>
-    <img src="assets/concealment counteracting.pdf" width=800/>
+    <img src="assets/concealment counteracting.jpg" width=800/>
     </div>
 
   - A large-scale multimodal instruction fine-tuning dataset in Concealed Vision area, **CvpINST**
@@ -42,7 +42,7 @@ complex output structures, called **Concealed Dense Prediction**.
   - An attempt at a unified paradigm in Concealed Visual Perception community, **CvpAgent**
 
     <div align=center>
-    <img src="assets/CVPAgent.pdf" width=800/>
+    <img src="assets/CVPAgent.jpg" width=800/>
     </div>
 
   
