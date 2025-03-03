@@ -82,12 +82,25 @@ conda activate cvpagent
 pip install -r requirements.txt
 pip install qwen-vl-utils
 pip install git+https://github.com/huggingface/transformers.git@9d2056f12b66e64978f78a2dcb023f65b2be2108 accelerate
+wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.9.post1/flash_attn-2.5.9.post1+cu122torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 pip install flash_attn-2.5.9.post1+cu122torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 # SAM2
-cd special_list
+cd special_list/segment_anything_2
 pip install -e ".[demo]"
-cd ..
+cd ../..
 ```
+
+<details>
+  <summary><b>Frequently asked questions about the environment installation</b></summary>
+<ol>
+  <li> <b>accelerate installation failed</b></li>
+    Usually it's a network problem that can be solved with a few more tries 
+  <li> <b>symbol __nvJitLinkComplete_12_4 version libnvJitLink.so.12 not defined in file libnvJitLink.so.12 with link time reference</b></li>
+ln -s /path/to/envs/cvpagent/lib/python3.10/site-packages/nvidia/nvjitlink/lib/libnvJitLink.so.12 /path/to/envs/cvpagent/lib/python3.10/site-packages/nvidia/cusparse/lib/libnvJitLink.so.12
+<br>
+export LD_LIBRARY_PATH=/path/to/envs/cvpagent/lib/python3.10/site-packages/nvidia/cusparse/lib:$LD_LIBRARY_PATH
+</ol>
+</details>
 
 
 
