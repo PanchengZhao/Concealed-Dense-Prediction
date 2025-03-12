@@ -115,27 +115,126 @@ Our dataset contains **three parts**:
 - **Concealed Images**: 81k+ images collected from 20 Datasets. Category labels for some of the images were manually labeled, and the data were organized in the following form:
 
 ```shell
-
+CvpINST                         % dataset root
+├── JSON                        % annotation
+├── train                       % trainset
+│   ├── image                   % images
+│   │   ├── Concealed           % hierarchical categorization structure  
+│   │   │   ├── Artificial 
+│   │   │   │   ├── Copymove  
+│   │   │   │   ├── ...
+│   │   │   ├── Biological  
+│   │   │   │   ├── Aquatic                                       
+│   │   │   │   │   ├── Batfish                                                
+│   │   │   │   │   ├── ...
+│   │   │   ├── Optical  
+│   │   │   │   ├── Glass                                       
+│   │   │   │   │   ├── Bottle                                                
+│   │   │   │   │   ├── ...
+│   │   ├── General
+│   ├── mask									  % pixel-wised binary mask
+│   ├── instance								% instance annotation （optional）
+├── test                        % testset
+│   ├── image
+│   ├── mask
+│   ├── instance
 ```
 
 - **Human-machine Dialogues:**  one-round or multi-round conversational dialogue about 4 tasks
-- **Intermediate results:** Some intermediate results, including Category labels, Image Captions, Prompt templates and so on.
 
-|        Datasets         |       GoogleDrive       |          BaiduNetdisk           |
-| :---------------------: | :---------------------: | :-----------------------------: |
-|    Concealed Images     | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
-| Human-machine Dialogues | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
-|  Intermediate results   | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
+- **Intermediate results:** Some intermediate results, including Image Captions, Prompt templates and so on.
+
+  **Specifically, the json folder contains the following details：**
+
+```
+JSON
+├── CVP_test.json						% Original annotation of the dataset
+├── CVP_train.json
+├── CvpINST_test.json       % Human-machine Dialogues instruction dataset
+├── CvpINST_train.json
+├── image_caption.json      % the description about concealment
+└── prompt_template.json    % Prompt templates used in constructing dialogues
+```
+
+​		**Examples of samples from CVP_train.json/CVP_test.json:**
+
+```json
+{
+        "idx": 5283,
+        "source_data": {
+            "image_name": "PlantCAMO_PC_Aloe_striata_1.jpg",
+            "anno": "The image depicts a succulent ...",
+            "category": "Concealed/Biological/Aloe/Striata"
+        },
+        "image": path to image,
+        "mask": path to mask,
+        "instance": null,
+        "width": 5472,
+        "height": 3648,
+        "bbox": [
+            599.0,
+            810.0,
+            2283.0,
+            2431.0
+        ],
+        "dataset_name": "PlantCAMO"
+    }
+```
+
+​		**Examples of samples from CvpINST_train.json/CvpINST_test.json:**
+
+```json
+{
+        "idx": 5283,
+        "source_data": {
+            "image_name": "PlantCAMO_PC_Aloe_striata_1.jpg",
+            "anno": null,
+            "category": "Concealed/Biological/Aloe/Striata"
+        },
+        "image": path to image,
+        "mask": path to mask,
+        "dataset_name": "PlantCAMO",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nCan any part of the image be considered concealed due to similar background patterns?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes, part of the image is concealed by similar background patterns."
+            },
+            {
+                "from": "human",
+                "value": "Please elaborate on how the target is camouflaged or obscured in the identified region."
+            },
+            {
+                "from": "gpt",
+                "value": "..."
+            }
+        ],
+        "task": "CAP"
+    }
+```
+
+​		**You can access the dataset via the following link：**
+
+|                        Datasets                         |                         BaiduNetdisk                         |
+| :-----------------------------------------------------: | :----------------------------------------------------------: |
+|   Full Dataset (Images + Annotations + Instructions)    | [BaiduNetdisk](https://pan.baidu.com/s/1BqLmDTAKcP5dYEMKPI8PjQ?pwd=pmgc)(code:pmgc) |
+|                        Full JSON                        | [BaiduNetdisk](https://pan.baidu.com/s/1KtAzwT8zvTasn3rtTjV_sg?pwd=qibs)(code:qibs) |
+|        Original Annotation (Cvp_train/test.json)        | [BaiduNetdisk](https://pan.baidu.com/s/15OBdrYL70n5WtmRTuTjHwg?pwd=xg76)(code:xg76) |
+|    Human-machine Dialogues (CvpINST_train/test.json)    | [BaiduNetdisk](https://pan.baidu.com/s/1dRUiH3Evg8dzPTQOgP0i3Q?pwd=29v6)(code:29v6) |
+| Intermediate results (Image Captions, Prompt templates) | [BaiduNetdisk](https://pan.baidu.com/s/1fU_NhLnUfY0Dn3WWnzyM8Q?pwd=y37p)(code:y37p) |
 
 ##### Results:
 
 The results of CDP Benchmarks can be downloaded at the following link：
 
-|               Results               |       GoogleDrive       |          BaiduNetdisk           |
-| :---------------------------------: | :---------------------: | :-----------------------------: |
-| Concealed Object Segmentation Tasks | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
-|  Concealed Object Detection Tasks   | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
-|      Concealed Edge Estimation      | [GoogleDrive](https://) | [BaiduNetdisk](https://)(code:) |
+|               Results               |  GoogleDrive  |  BaiduNetdisk  |
+| :---------------------------------: | :-----------: | :------------: |
+| Concealed Object Segmentation Tasks | [GoogleDrive] | [BaiduNetdisk] |
+|  Concealed Object Detection Tasks   | [GoogleDrive] | [BaiduNetdisk] |
+|      Concealed Edge Estimation      | [GoogleDrive] | [BaiduNetdisk] |
 
 
 
@@ -143,22 +242,18 @@ The results of CDP Benchmarks can be downloaded at the following link：
 
 The Official Released Models:
 
-|     Model     |      |
-| :-----------: | :--: |
-|     SAM2      |      |
-|  Qwen2-VL-2B  |      |
-|  Qwen2-VL-7B  |      |
-| Qwen2.5-VL-3B |      |
-| Qwen2.5-VL-7B |      |
+|  Model  |                       LINK                       |
+| :-----: | :----------------------------------------------: |
+|  SAM2   | [Link](https://github.com/facebookresearch/sam2) |
+| Qwen-VL |   [Link](https://github.com/QwenLM/Qwen2.5-VL)   |
 
 Our fine-tuned version
 
-|         Model          |      |
-| :--------------------: | :--: |
-|  CvpAgent-Qwen2-VL-2B  |      |
-|  CvpAgent-Qwen2-VL-7B  |      |
-| CvpAgent-Qwen2.5-VL-3B |      |
-| CvpAgent-Qwen2.5-VL-7B |      |
+|         Model          |                         BaiduNetdisk                         |
+| :--------------------: | :----------------------------------------------------------: |
+|  CvpAgent-Qwen2-VL-7B  | [BaiduNetdisk](https://pan.baidu.com/s/1_0XuK6WZA_U3JFDrVZ3c3g?pwd=bak8)(code:bak8) |
+| CvpAgent-Qwen2.5-VL-3B | [BaiduNetdisk](https://pan.baidu.com/s/1Lpf-JBfjz9Ug9jOdP-gEJA?pwd=rn9z)(code:rn9z) |
+| CvpAgent-Qwen2.5-VL-7B | [BaiduNetdisk](https://pan.baidu.com/s/1IRCxjUlOVtemVGjOCQBaRg?pwd=wwj5)(code:wwj5) |
 
 
 
