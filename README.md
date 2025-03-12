@@ -132,8 +132,8 @@ CvpINST                         % dataset root
 │   │   │   │   │   ├── Bottle                                                
 │   │   │   │   │   ├── ...
 │   │   ├── General
-│   ├── mask									  % pixel-wised binary mask
-│   ├── instance								% instance annotation （optional）
+│   ├── mask                    % pixel-wised binary mask
+│   ├── instance                % instance annotation （optional）
 ├── test                        % testset
 │   ├── image
 │   ├── mask
@@ -148,7 +148,7 @@ CvpINST                         % dataset root
 
 ```
 JSON
-├── CVP_test.json						% Original annotation of the dataset
+├── CVP_test.json           % Original annotation of the dataset
 ├── CVP_train.json
 ├── CvpINST_test.json       % Human-machine Dialogues instruction dataset
 ├── CvpINST_train.json
@@ -166,8 +166,8 @@ JSON
             "anno": "The image depicts a succulent ...",
             "category": "Concealed/Biological/Aloe/Striata"
         },
-        "image": path to image,
-        "mask": path to mask,
+        "image": "path to image",
+        "mask": "path to mask",
         "instance": null,
         "width": 5472,
         "height": 3648,
@@ -191,8 +191,8 @@ JSON
             "anno": null,
             "category": "Concealed/Biological/Aloe/Striata"
         },
-        "image": path to image,
-        "mask": path to mask,
+        "image": "path to image",
+        "mask": "path to mask",
         "dataset_name": "PlantCAMO",
         "conversations": [
             {
