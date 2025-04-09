@@ -4,15 +4,21 @@
 
 ---
 
-[**Pancheng Zhao**](https://www.zhaopancheng.top)<sup>1,2</sup>· [**Deng-Ping Fan**](https://dengpingfan.github.io/)<sup>2,1</sup> · Shupeng Cheng<sup>3</sup> · [**Peng Xu**](https://www.pengxu.net/)<sup>3</sup> · Salman Khan · Fahad Shahbaz Khan · [**Jufeng Yang**](https://cv.nankai.edu.cn/)<sup>1,2</sup>
+[**Pancheng Zhao**](https://www.zhaopancheng.top)<sup>1</sup>· [**Deng-Ping Fan**](https://dengpingfan.github.io/)<sup>1</sup> · Shupeng Cheng<sup>2</sup>  · Salman Khan<sup>3</sup> · 
+
+Fahad Shahbaz Khan<sup>3</sup> · David Clifton<sup>4</sup> · [**Peng Xu**](https://scholar.google.com/citations?user=9_v4tC0AAAAJ&hl=zh-CN&oi=sra)<sup>2+</sup> · [**Jufeng Yang**](https://cv.nankai.edu.cn/)<sup>1,5,6+</sup>
 
 <sup>1</sup> VCIP & TMCC & DISSec, College of Computer Science, Nankai University
 
-<sup>2</sup> Nankai International Advanced Research Institute (SHENZHEN· FUTIAN)
+<sup>2</sup> Department of Electronic Engineering, Tsinghua University
 
-<sup>3</sup> Department of Electronic Engineering, Tsinghua University
+<sup>3</sup> Mohammed Bin Zayed University of Artificial Intelligence 
 
-<sup>4</sup> Mohammed Bin Zayed University of Artificial Intelligence 
+<sup>4</sup> Department of Engineering Science, University of Oxford
+
+<sup>5</sup> Nankai International Advanced Research Institute (SHENZHEN· FUTIAN)
+
+<sup>6</sup> Pengcheng Laboratory, China
 
 <sup>+</sup>corresponding authors
 
@@ -225,16 +231,6 @@ JSON
 |        Original Annotation (Cvp_train/test.json)        | [BaiduNetdisk](https://pan.baidu.com/s/15OBdrYL70n5WtmRTuTjHwg?pwd=xg76)(code:xg76) |
 |    Human-machine Dialogues (CvpINST_train/test.json)    | [BaiduNetdisk](https://pan.baidu.com/s/1dRUiH3Evg8dzPTQOgP0i3Q?pwd=29v6)(code:29v6) |
 | Intermediate results (Image Captions, Prompt templates) | [BaiduNetdisk](https://pan.baidu.com/s/1fU_NhLnUfY0Dn3WWnzyM8Q?pwd=y37p)(code:y37p) |
-
-##### Results:
-
-The results of CDP Benchmarks can be downloaded at the following link：
-
-|               Results               |  GoogleDrive  |  BaiduNetdisk  |
-| :---------------------------------: | :-----------: | :------------: |
-| Concealed Object Segmentation Tasks | [GoogleDrive] | [BaiduNetdisk] |
-|  Concealed Object Detection Tasks   | [GoogleDrive] | [BaiduNetdisk] |
-|      Concealed Edge Estimation      | [GoogleDrive] | [BaiduNetdisk] |
 
 
 
