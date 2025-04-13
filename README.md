@@ -222,15 +222,22 @@ JSON
     }
 ```
 
-​		**You can access the dataset via the following link：**
+**📥 How to Access the Dataset**
 
-|                        Datasets                         |                         BaiduNetdisk                         |
-| :-----------------------------------------------------: | :----------------------------------------------------------: |
-|   Full Dataset (Images + Annotations + Instructions)    | [BaiduNetdisk](https://pan.baidu.com/s/1BqLmDTAKcP5dYEMKPI8PjQ?pwd=pmgc)(code:pmgc) |
-|                        Full JSON                        | [BaiduNetdisk](https://pan.baidu.com/s/1KtAzwT8zvTasn3rtTjV_sg?pwd=qibs)(code:qibs) |
-|        Original Annotation (Cvp_train/test.json)        | [BaiduNetdisk](https://pan.baidu.com/s/15OBdrYL70n5WtmRTuTjHwg?pwd=xg76)(code:xg76) |
-|    Human-machine Dialogues (CvpINST_train/test.json)    | [BaiduNetdisk](https://pan.baidu.com/s/1dRUiH3Evg8dzPTQOgP0i3Q?pwd=29v6)(code:29v6) |
-| Intermediate results (Image Captions, Prompt templates) | [BaiduNetdisk](https://pan.baidu.com/s/1fU_NhLnUfY0Dn3WWnzyM8Q?pwd=y37p)(code:y37p) |
+You can obtain access to the dataset by filling out the following form:
+
+**Please note:**
+
+- Make sure the information you provide (especially your affiliation and email address) is accurate. This information is used **solely for access authorization purposes**, and will **not be shared or used for any other purpose**.
+- The download link currently uses **BaiduNetdisk**. Access may be restricted or unstable in certain regions — please verify availability in advance.
+
+|                        Datasets                         |                     Request Form                      |
+| :-----------------------------------------------------: | :---------------------------------------------------: |
+|   Full Dataset (Images + Annotations + Instructions)    | 👉 [Request Form](https://forms.gle/WpB9eSieEDfz7bQX9) |
+|                        Full JSON                        | 👉 [Request Form](https://forms.gle/EWHtVY35iwsUgEv28) |
+|        Original Annotation (Cvp_train/test.json)        | 👉 [Request Form](https://forms.gle/7cPjDQ59AnHKSBvh6) |
+|    Human-machine Dialogues (CvpINST_train/test.json)    | 👉 [Request Form](https://forms.gle/NB77j9saF5WsEMg56) |
+| Intermediate Results (Image Captions, Prompt templates) | 👉 [Request Form](https://forms.gle/PH8TuzQ4BeDzJFRn6) |
 
 
 
@@ -245,11 +252,11 @@ The Official Released Models:
 
 Our fine-tuned version
 
-|         Model          |                         BaiduNetdisk                         |
-| :--------------------: | :----------------------------------------------------------: |
-|  CvpAgent-Qwen2-VL-7B  | [BaiduNetdisk](https://pan.baidu.com/s/1_0XuK6WZA_U3JFDrVZ3c3g?pwd=bak8)(code:bak8) |
-| CvpAgent-Qwen2.5-VL-3B | [BaiduNetdisk](https://pan.baidu.com/s/1Lpf-JBfjz9Ug9jOdP-gEJA?pwd=rn9z)(code:rn9z) |
-| CvpAgent-Qwen2.5-VL-7B | [BaiduNetdisk](https://pan.baidu.com/s/1IRCxjUlOVtemVGjOCQBaRg?pwd=wwj5)(code:wwj5) |
+|         Model          |                    Request Form                     |
+| :--------------------: | :-------------------------------------------------: |
+|  CvpAgent-Qwen2-VL-7B  | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
+| CvpAgent-Qwen2.5-VL-3B | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
+| CvpAgent-Qwen2.5-VL-7B | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
 
 
 
