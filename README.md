@@ -65,7 +65,8 @@ complex output structures, called **Concealed Dense Prediction**.
 
 ## 1. News
 
-* **🔥2025-02-25🔥:** **Creating repository.** Open-source the code and dataset.
+* **🔥2025-04-15🔥:** Code and dataset officially released as open source.
+* **2025-02-25:** **Creating repository.** 
 
 
 
@@ -252,11 +253,11 @@ The Official Released Models:
 
 Our fine-tuned version
 
-|         Model          |                    Request Form                     |
-| :--------------------: | :-------------------------------------------------: |
-|  CvpAgent-Qwen2-VL-7B  | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
-| CvpAgent-Qwen2.5-VL-3B | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
-| CvpAgent-Qwen2.5-VL-7B | [Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
+|         Model          |                     Request Form                     |
+| :--------------------: | :--------------------------------------------------: |
+|  CvpAgent-Qwen2-VL-7B  | 👉[Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
+| CvpAgent-Qwen2.5-VL-3B | 👉[Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
+| CvpAgent-Qwen2.5-VL-7B | 👉[Request Form](https://forms.gle/6KgWAmrSh4nFLjqV8) |
 
 
 
