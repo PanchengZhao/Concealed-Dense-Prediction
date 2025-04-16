@@ -22,7 +22,7 @@ Fahad Shahbaz Khan<sup>3</sup> · David Clifton<sup>4</sup> · [**Peng Xu**](htt
 
 <sup>+</sup>corresponding authors
 
-<a href="http://"><img src='https://img.shields.io/badge/arXiv-CDP-red' alt='Paper PDF'></a>	<a href='https://zhaopancheng.top/publication'><img src='https://img.shields.io/badge/Project_Page-CDP-green' alt='Project Page'></a>
+<a href="http://arxiv.org/abs/2504.10979"><img src='https://img.shields.io/badge/arXiv-CDP-red' alt='Paper PDF'></a>	<a href='https://zhaopancheng.top/publication'><img src='https://img.shields.io/badge/Project_Page-CDP-green' alt='Project Page'></a>
 
 ---
 
