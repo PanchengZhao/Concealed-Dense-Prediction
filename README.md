@@ -304,8 +304,13 @@ pc.zhao99@gmail.com
 
 If you find this project useful, please consider citing:
 
-```bibtex
-
+```
+@article{zhao2025deep,
+  title={Deep Learning in Concealed Dense Prediction},
+  author={Zhao, Pancheng and Fan, Deng-Ping and Cheng, Shupeng and Khan, Salman and Khan, Fahad Shahbaz and Clifton, David and Xu, Peng and Yang, Jufeng},
+  journal={arXiv preprint arXiv:2504.10979},
+  year={2025}
+}
 ```
 
 
